@@ -1,0 +1,14 @@
+{
+	"required": true,
+	"package": "dev.yaghito.beetrootmc.mixin",
+	"compatibilityLevel": "JAVA_25",
+	"mixins": [
+		"Shields.ItemInHandRendererMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

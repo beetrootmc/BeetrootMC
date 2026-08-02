@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "beetroot",
+	"version": "${version}",
+	"name": "Beetroot",
+	"description": "QOL addon for cactus aimed towards competitive minecraft players.",
+	"authors": [
+		"YaghitoYT"
+	],
+	"contact": {
+
+		"yaghito's discord": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/beetroot/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.yaghito.beetrootmc.Beetroot"
+		],
+		"client": [
+			"dev.yaghito.beetrootmc.BeetrootClient"
+		],
+		"cactus": [
+			"dev.yaghito.beetrootmc.BeetrootCactus"
+		]
+	},
+	"mixins": [
+		"beetroot.mixins.json"
+	],
+	"accessWidener": "beetroot.accesswidener",
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}

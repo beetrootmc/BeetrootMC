@@ -1,0 +1,10 @@
+{
+  "module_categories.beetroot": "Beetroot",
+  "modules.shields.name": "Shields",
+  "modules.shields.description": "A lot of tweaks for the shield",
+  "modules.shields.groups.shield_positioning": "Shield positioning",
+  "modules.shields.settings.x_offset.name": "X offset",
+  "modules.shields.settings.x_offset.description": "The horizontal offset applied to the shield's position on screen.",
+  "modules.shields.settings.y_offset.name": "Y offset",
+  "modules.shields.settings.y_offset.description": "The vertical offset applied to the shield's position on screen."
+}
