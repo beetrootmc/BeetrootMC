@@ -9,4 +9,5 @@ This project is licensed GPL-v3. Check [LICENSE](LICENSE) for more info.
 
 ## MORE INFO
 **AI USAGE**
+
 All code in this repository is human-generated. The only exception to this are translations and long walls of boilerplate code (like setting names for every config value)
