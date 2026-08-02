@@ -1,10 +1,27 @@
 {
   "module_categories.beetroot": "Beetroot",
+
   "modules.shields.name": "Shields",
   "modules.shields.description": "A lot of tweaks for the shield",
   "modules.shields.groups.shield_positioning": "Shield positioning",
   "modules.shields.settings.x_offset.name": "X offset",
   "modules.shields.settings.x_offset.description": "The horizontal offset applied to the shield's position on screen.",
   "modules.shields.settings.y_offset.name": "Y offset",
-  "modules.shields.settings.y_offset.description": "The vertical offset applied to the shield's position on screen."
+  "modules.shields.settings.y_offset.description": "The vertical offset applied to the shield's position on screen.",
+
+  "modules.fog.name": "Fog",
+  "modules.fog.description": "Lets you disable or enable various types of fog.",
+  "modules.fog.settings.lavaFog.name": "Lava Fog",
+  "modules.fog.settings.lavaFog.description": "Whether to show or not lava fog",
+  "modules.fog.settings.powderSnowFog.name": "Powder Snow Fog",
+  "modules.fog.settings.powderSnowFog.description": "Whether to show or not powder snow fog",
+  "modules.fog.settings.blindnessFog.name": "Blindness Fog",
+  "modules.fog.settings.blindnessFog.description": "Whether to show or not blindness fog",
+  "modules.fog.settings.darknessFog.name": "Darkness Fog",
+  "modules.fog.settings.darknessFog.description": "Whether to show or not darkness fog",
+  "modules.fog.settings.waterFog.name": "Water Fog",
+  "modules.fog.settings.waterFog.description": "Whether to show or not water fog",
+  "modules.fog.settings.atmosphericFog.name": "Atmospheric Fog",
+  "modules.fog.settings.atmosphericFog.description": "Whether to show or not atmospheric fog"
+
 }
