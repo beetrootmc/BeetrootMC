@@ -12,7 +12,7 @@
 		"yaghito's discord": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "GPLv3",
-	"icon": "assets/beetroot/icon.png",
+	"icon": "assets/beetroot/icon16.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [

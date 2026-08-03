@@ -28,7 +28,7 @@ public class Shields extends Module {
 
     @Override
     public void onEnable() {
-        int shield_horizontal_offset = x_offset.get();
+
     }
 
     @Override

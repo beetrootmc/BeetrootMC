@@ -19,7 +19,7 @@ public class BeetrootCactus implements ICactusAddon {
 
     public static final Logger LOGGER = LoggerFactory.getLogger("BeetrootMC");
 
-    public static final Category CATEGORY = new Category("beetroot", Items.DIAMOND);
+    public static final Category CATEGORY = new Category("beetroot", Items.BEETROOT);
 
     @Override
     public void onInitialize(RegistryBus registryBus) {
