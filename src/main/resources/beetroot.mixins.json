@@ -4,7 +4,8 @@
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 		"Shields.ItemInHandRendererMixin",
-		"Fog.FogRendererMixin"
+		"Fog.FogRendererMixin",
+		"Particles.ParticleEngineMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

@@ -2,6 +2,7 @@ package dev.yaghito.beetrootmc;
 
 import dev.yaghito.beetrootmc.feature.commands.TestCommand;
 import dev.yaghito.beetrootmc.feature.modules.Fog;
+import dev.yaghito.beetrootmc.feature.modules.Particles;
 import dev.yaghito.beetrootmc.feature.modules.Shields;
 import dev.yaghito.beetrootmc.feature.modules.TestModule;
 
@@ -31,6 +32,7 @@ public class BeetrootCactus implements ICactusAddon {
         registryBus.register(Category.class, ctx -> CATEGORY);
         registryBus.register(Module.class, ctx -> new Shields());
         registryBus.register(Module.class, ctx -> new Fog());
+        registryBus.register(Module.class, ctx -> new Particles());
         // registryBus.register(Module.class, ctx -> new TestModule());
         // registryBus.register(Command.class, ctx -> new TestCommand());
 
