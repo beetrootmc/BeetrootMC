@@ -1,5 +1,5 @@
 # Beetroot
-A general purpose minecraft mod aimed towards competitive players.
+A general purpose minecraft mod aimed towards competitive players. modrinth.com/mod/beetroot
 ### FEATURES
 - Shields, this module contains shield tweaks like low shield
 
