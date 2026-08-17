@@ -1,9 +1,9 @@
 package dev.yaghito.beetrootmc.mixin.Shields;
 
-import com.dwarslooper.cactus.client.feature.module.Module;
 import com.mojang.blaze3d.vertex.PoseStack;
 import dev.yaghito.beetrootmc.feature.modules.Shields;
-import dev.yaghito.beetrootmc.feature.modules.Shields.*;
+import net.minecraft.client.Minecraft;
+import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.ItemInHandRenderer;
 import net.minecraft.client.renderer.SubmitNodeCollector;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,12 +18,20 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(ItemInHandRenderer.class)
 public class ItemInHandRendererMixin {
 
-
     @Inject(method = "renderItem(Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/world/item/ItemDisplayContext;Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;I)V", at = @At(value = "INVOKE", target = "Lnet/minecraft/client/renderer/item/ItemStackRenderState;submit(Lcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/SubmitNodeCollector;III)V"))
     public void renderItem(LivingEntity mob, ItemStack itemStack, ItemDisplayContext type, PoseStack poseStack, SubmitNodeCollector submitNodeCollector, int lightCoords, CallbackInfo ci) {
-        if (itemStack.is(Items.SHIELD) && type.firstPerson() && Shields.INSTANCE.active()) {
-            poseStack.translate(Shields.INSTANCE.x_offset.get() / 100F,  Shields.INSTANCE.y_offset.get() /100F, 0.0D);
-        }
-    }
+        if (Shields.INSTANCE.active()) {
 
+            if (itemStack.is(Items.SHIELD) && type.firstPerson()) {
+                boolean invertHand = (type == ItemDisplayContext.FIRST_PERSON_LEFT_HAND);
+                int x_offset = Shields.INSTANCE.x_offset.get();
+                int inv_x_offset = -Shields.INSTANCE.x_offset.get();
+                int y_offset = Shields.INSTANCE.y_offset.get();
+                int current_x = invertHand ? inv_x_offset : x_offset;
+                poseStack.translate(current_x / 100F, y_offset / 100F, 0.0D);
+            }
+        }
+
+
+    }
 }

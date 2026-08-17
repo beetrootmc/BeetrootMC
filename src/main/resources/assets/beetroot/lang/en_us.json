@@ -3,7 +3,9 @@
 
   "modules.shields.name": "Shields",
   "modules.shields.description": "A lot of tweaks for the shield",
-  "modules.shields.groups.shield_positioning": "Shield positioning",
+  "modules.shields.groups.shield_offsetting": "Shield Offset",
+  "modules.shields.settings.shield_offset.name": "Shield offsetting",
+  "modules.shields.settings.shield_offset.description": "Whether the shield offsetting function is enabled or disabled",
   "modules.shields.settings.x_offset.name": "X offset",
   "modules.shields.settings.x_offset.description": "The horizontal offset applied to the shield's position on screen.",
   "modules.shields.settings.y_offset.name": "Y offset",
